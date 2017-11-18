@@ -14,6 +14,8 @@ with open(keys_file) as f:
 
 # Create twitter instance
 tw = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
+# More info:
+# https://twython.readthedocs.io/en/latest/index.html
 
 # Load random image and uplaod it to twitter
 num = random.randint(0, 20 - 1)
@@ -25,4 +27,9 @@ image_ids = tw.upload_media(media=photo)
 tweet_text = 'Testing Etopia Bot' + str(num)
 
 # Update status to twitter
+# More info
+# https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/post-statuses-update
 tw.update_status(status=tweet_text, media_ids=image_ids['media_id'])
+
+# EXERCISE:
+# Modify update text to mention another user

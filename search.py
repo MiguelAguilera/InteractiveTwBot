@@ -13,6 +13,8 @@ with open(keys_file) as f:
 
 # Create twitter instance
 tw = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
+# More info:
+# https://twython.readthedocs.io/en/latest/index.html
 
 # Define search query we want to look for in twitter
 searchquery = '"ni machismo ni feminismo, igualdad" exclude:retweets'

@@ -13,6 +13,8 @@ with open(keys_file) as f:
 
 # Create twitter instance
 tw = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
+# More info:
+# https://twython.readthedocs.io/en/latest/index.html
 
 # Get and read mentions texts and ids
 mentions = tw.get_mentions_timeline()
