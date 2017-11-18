@@ -1,2 +1,2 @@
-# ZombieBot
-Twitter bot for trolling trolls
+# Interactive Twitter Bot
+Basic material for interactive twitter bots 
