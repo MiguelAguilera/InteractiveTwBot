@@ -18,6 +18,8 @@ tw = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
 
 # Get and read mentions texts and ids
 mentions = tw.get_mentions_timeline()
+# More info:
+# https://developer.twitter.com/en/docs/tweets/timelines/api-reference/get-statuses-mentions_timeline
 for tweet in mentions:
 	print(tweet['text'], tweet['id'])
 

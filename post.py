@@ -27,9 +27,9 @@ image_ids = tw.upload_media(media=photo)
 tweet_text = 'Testing Etopia Bot' + str(num)
 
 # Update status to twitter
+tw.update_status(status=tweet_text, media_ids=image_ids['media_id'])
 # More info
 # https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/post-statuses-update
-tw.update_status(status=tweet_text, media_ids=image_ids['media_id'])
 
 # EXERCISE:
 # Modify update text to mention another user

@@ -21,6 +21,9 @@ searchquery = '"ni machismo ni feminismo, igualdad" exclude:retweets'
 
 # Get and read mentions texts and ids
 search = tw.search(q=searchquery, count=20, result_type='recent')
+# More info:
+# https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets
+
 for result in search["statuses"]:
 	print(result['text'], result['id'])
 
